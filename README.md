@@ -1,11 +1,26 @@
 [![Stories in Ready](https://badge.waffle.io/CivicActions/agile-baseline.png?label=ready&title=Ready)](https://waffle.io/CivicActions/agile-baseline)
 ##CivicActions Agile Baseline
 
-The Agile Baseline documents the principles, policies, processes, methods, and tools that underpin the way we do our work. This is a living document and is updated regularly by the CivicActions Agile Champions group. If you want to add or edit content in the Baseline, please submit a pull request or ask in [#agile](https://civicactions.slack.com/messages/agile/).
+The Agile Baseline documents the principles, policies, processes, methods, and tools that underpin the way we do our work. This is a living document and is updated regularly by the CivicActions Agile Champions group.
 
-The crux of this documentation is a set of how-to "method guides" that describe various techniques we use for research, design, implementation, and validation - check out [Audiences & Outcomes](/04-methods/1-research/audiences-and-outcomes-guide.md) for an example of a fully realized guide (we are still developing the others). We recommend using this documentation in combination with our [Agile Baseline story map](https://civicactions.storiesonboard.com/m/agile-baseline-story-map), which maps out an ideal Agile project lifecycle.
+###How to Use the Baseline
 
-###Table of Contents
+The crux of this documentation is a set of how-to "guides" that describe our process as well as the various methods we use for research, design, implementation, and validation. The **Table of Contents** below provides an overview of the way content is organized in the Baseline. We recommend using this documentation in combination with our [Agile Baseline story map](https://civicactions.storiesonboard.com/m/agile-baseline-story-map), which maps out an ideal Agile project lifecycle.
+
+For examples of fully realized "guides," check out [Sprint Planning Meetings](/03-process/practices/sprint-planning-meetings.md) and [Audiences & Outcomes](/04-methods/1-research/audiences-and-outcomes-guide.md) (we are still developing much of this content).
+
+###How to Contribute
+
+All CivicActions team members are invited to add or edit content in the Baseline. For minor edits, please make the changes in a separate branch and submit a pull request.
+
+We are currently managing the creation of new Baseline content in [Waffle](https://waffle.io/CivicActions/agile-baseline). If you are interested in writing/adding new content, you are welcome to assign yourself to a card from the "Ready" column. Make your changes in a separate branch and submit a pull request when your work is ready to be merged.
+
+Please note: we have created templates for [Practices](03-process/practices/_template.md), [Methods](04-methods/_template.md), and [Tools](05-tools/_tool-template.md). If you are adding a brand new .md file, please use the appropriate template.
+
+If you have questions, ask in [#agile](https://civicactions.slack.com/messages/agile/).
+
+
+##Table of Contents
 
 [Principles](01-principles/principles.md)
 
