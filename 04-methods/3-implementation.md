@@ -1,7 +1,7 @@
 ##Implementation Methods
 
 - Code Review
-- Automated Testing
+- Quality Assurance and Automated Testing
 - Web Performance 
 
 ## Development 
@@ -23,11 +23,25 @@ As for our front end development approach, CivicActions uses a design component 
 
 To ensure that our code is as stable and scalable as possible, we adopt a rigorous code review and automated testing process that is designed to prevent bugs from entering the system. Each developer that touches the site works on his or her own local computer and pushes code to their own branch of the project’s Git repository. Once they submit a merge request to contribute code to the main project, a Tech Lead or fellow engineer will review the code for any errors, syntax, and potential performance impacts. After the code review is complete, a Jenkins build will verify whether the code is stable before it can be pulled into a development environment, where internal QA will be performed before the final client signoff. These multiple layers of workflow ensure that code and its subsequent functionality have been reviewed substantially before impacting a production environment.
 
-## Automated Testing 
+## Quality Assurance and Automated Testing 
 
-In addition to the code review process, we employ automated testing such as Behat, or behavior driven testing, or Selenium to make sure that new functionality and code is performing as expected and no regressions have been introduced into the system. Tests should be written for each user story in order to verify that the story is complete.
+CivicActions is committed to code quality and our Quality Assurance (QA) processes are rigorous, having been formed throughout our longstanding attention to this area. We practice continuous QA during product delivery by making QA and testing part of the development process, and not reserving them until code has been pushed to the live environment.  Our workflow includes checks and balances to ensure that we meet expectations for the entire process through to the end product. This includes communication between all members of the team and stakeholders along with quality written and commented code.
 
-Additional testing we perform regularly at CivicActions includes accessibility testing, automated browser testing and security testing using tools such as the WAVE toolbar, Quail, Cross Browser Testing, and coder testing with security scripts. 
+CivicActions incorporates both automated and manual testing processes to ensure code compliance. Our process advocates for careful requirements gathering, definition of acceptance criteria, and multiple forms of validation. The specific website goals and functionality are assessed to identify the most appropriate testing method(s), including:
+
+**Manual Testing**: The development team performs smoke testing and involves other stakeholders, like the product owner, for validation.
+
+**Systematic Testing**: Systematic tests are driven by explicit QA goals and/or instructions contained in each individual implementation ticket. An implementation ticket could contain all or a portion of work needed to fulfill a project requirement.
+
+**Automated Testing**: Types of tests include:
+
+* Verifying compliance of W3C standards.
+* Selenium/Behat testing - tests that need to be repeated often can be scripted using Selenium or the Behat frameworks. These tasks can include common actions as logging in or creating a new user, and can also be more robust to include high risk areas of the site that often get tested in regression testing. 
+* Automated browser testing - using a combination of Cross Browser Testing and/or Browsers to check all pages on the site for browser compatibility against browser matrix -IE7, IE8, IE9, Safari, Chrome, FF - exact device and browser matrix for the project are discussed and agreed at project kick off.
+* Security script testing - Besides relying on Drupal's high quality code, good coding practices and a code review by our Engineering Manager, we are also able to run the coder module to look for security issues any place that there is text entry.
+* 508 compliance leveraging tools like QUAIL and WAVE to meet both Web Content Accessibility Guidelines (WCAG) and Authoring Tool Accessibility Guidelines (ATAG).
+
+**Regression testing**: This testing is typically carried out at the end of a formal round of QA and includes regression testing to assess ALL site functionality to ensure no items that were previously functional have been “broken.” 
 
 ## Web Performance 
 
